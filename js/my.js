@@ -1,4 +1,4 @@
-// Здесь наше представление
+//view module
 var view={
 	displayMessage: function(msg){
 	    const messageArea = document.querySelector("#messageArea");
@@ -13,6 +13,8 @@ var view={
 		cell.setAttribute("class", "miss");
 	}
 };
+
+//model
 const model = {
 	boardSize: 7,
 	shipsNumber: 3,
@@ -107,6 +109,7 @@ const model = {
 	}
 };
 
+//controller
 const controller = {
 	guesses: 0,
 	guessProcess: function(guess){
